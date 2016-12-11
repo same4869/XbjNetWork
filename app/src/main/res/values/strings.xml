@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">XbjNetWork</string>
+
+    <!-- 网络提醒 -->
+    <string name="error_network">网络被作业吓瘫痪噜，快检查一下！</string>
+    <string name="error_wenba">网络开小差了，快去检查一下吧！</string>
+    <string name="error_request_params">君君有点懵，一会儿再试吧</string>
+    <string name="error_response_data">传输出错，君君正在努力修复！</string>
+    <string name="error_feed_upload">图片上传失败啦，再试一次呗~</string>
+    <string name="error_request_timeout">网速慢成蜗牛，一会儿再试吧！</string>
+    <string name="error_request_unknown_host_error">网络君迷路走丢了！</string>
+    <string name="error_request_url_error">你的操作君君有点懵！</string>
+    <string name="error_request_protocol_exception">君君愣住了，一会儿再试吧！</string>
+    <string name="error_request_not_found_cache_error">缓存数据丢失了！</string>
+    <string name="error_request_error_server">君君努力恢复服务中！</string>
+    <string name="error_request_error_storage">手机存储出错了，快去检查下吧！</string>
+    <string name="error_request_error_space">手机存储故障了！</string>
+</resources>
