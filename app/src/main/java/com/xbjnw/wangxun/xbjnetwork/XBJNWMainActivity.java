@@ -3,7 +3,9 @@ package com.xbjnw.wangxun.xbjnetwork;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
+import com.xbjnw.wangxun.xbjnetwork.web.WenbaImageLoader;
 import com.xbjnw.wangxun.xbjnetwork.web.WenbaRequest;
 import com.xbjnw.wangxun.xbjnetwork.webbase.WenbaWebLoader;
 import com.xbjnw.wangxun.xbjnetwork.webbase.core.WenbaResponse;
@@ -12,6 +14,7 @@ import com.yolanda.nohttp.RequestMethod;
 import java.util.HashMap;
 
 public class XBJNWMainActivity extends AppCompatActivity {
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,9 @@ public class XBJNWMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_xbjnwmain);
 
         requestGuidePic();
+
+        imageView = (ImageView) findViewById(R.id.test_im);
+        WenbaImageLoader.getInstance(getApplicationContext()).displayImage("http://ww3.sinaimg.cn/mw690/5f623dcegw1fakxd784zjj20zk0qo45h.jpg", imageView);
     }
 
     private void requestGuidePic() {
