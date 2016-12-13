@@ -13,9 +13,11 @@ import com.xbjnw.wangxun.xbjnetwork.web.WenbaImageLoader;
 import com.xbjnw.wangxun.xbjnetwork.web.WenbaRequest;
 import com.xbjnw.wangxun.xbjnetwork.webbase.WenbaDownLoader;
 import com.xbjnw.wangxun.xbjnetwork.webbase.WenbaWebLoader;
+import com.xbjnw.wangxun.xbjnetwork.webbase.core.BaseHttpRequest;
 import com.xbjnw.wangxun.xbjnetwork.webbase.core.WenbaDownloadListener;
 import com.xbjnw.wangxun.xbjnetwork.webbase.core.WenbaResponse;
 import com.yolanda.nohttp.RequestMethod;
+import com.yolanda.nohttp.rest.CacheMode;
 
 import java.util.HashMap;
 
@@ -131,6 +133,7 @@ public class XBJNWMainActivity extends AppCompatActivity {
                     }
 
                 });
+        request.setCacheMode(CacheMode.NONE_CACHE_REQUEST_NETWORK, BaseHttpRequest.CacheTimeType.MONTH);
         WenbaWebLoader.startHttpLoader(request);
     }
 }
